@@ -1,6 +1,6 @@
 # retention-clipper
 
-This script takes a .csv file of a YouTube video's absolute audience retention over time, then finds the timestamps where viewer retention is higher or more stable than usual.
+This script takes a .csv file of a YouTube video's absolute audience retention over time, then finds the timestamps where viewer retention is higher or more stable than usual. It visualises these timestamps on a line graph and prints them to a text file.
 
 ## Ex. 1: Low retention
 
