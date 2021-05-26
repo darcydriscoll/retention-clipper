@@ -15,7 +15,7 @@ import seaborn as sns
 plt.style.use('seaborn')
 
 # import data
-video_title = "technicallythetruth5_20-06-2020"
+video_title = ""
 retention = pd.read_csv('./data/{0}.csv'.format(video_title))
 # drop Relative audience retention (%) because it is not used here
 retention = retention.drop(columns='Relative audience retention (%)')
@@ -25,7 +25,7 @@ retention = retention.rename(columns={'Video position (%)' : 'video_position',
                                       
 # Get raw rounded second marks in video
 # This is required to ensure the x-ticks on the graph match the length of the video
-video_length = 1014  # in seconds -- can this be automated by hooking into the YouTube API?
+video_length = 0  # in seconds -- can this be automated by hooking into the YouTube API?
 diff = video_length / 99  # YouTube Studio displays 100 timestamps
 seconds = [0]
 for i in range(1, 100):
